@@ -1,0 +1,17 @@
+$ git checkout HEAD portrait.txt
+$ git add portrait.txt
+$ git commit -m "added eyebrows" 
+[master d4c2cb8] added eyebrows
+i file changed 1 insertion (+), 1 deletion(-)
+$ git add .
+$ git commit -m "changes made to dates"
+[master d26ddec] changes made to dates
+3 files changed, 19 insertions(+) 2 deletions(-)
+create mode 100644 house.txt
+$ git add .
+$ git reset HEAD house.txt
+Unstaged changes after reset:
+M	houset.txt
+$ git commit -m "making a commit without house.txt"
+[master 71235f99] making a commit without house.txt
+2 files changed, 4 insertions(+), 2 deletions(-)
